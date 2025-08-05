@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+/*     align-content: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 1000x auto 0;
+    padding: 0 auto;
+    width: 400px;
+    height: 500px;
+    /* background: #78f776;
+    border-radius: 20px;
+    justify-self: center; */
+}
+.card{
+    width: 100%;
+    height: 100%;
+    transition:  transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    perspective: 1000px;
+}
+.card.is-flippled{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-sizing: 0px 3px 18px 3px #00000033;
+}
+.front{
+    background: linear-gradient(to bottom right, #ffce00, #fe4880);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back{
+    background: linear-gradient(to top left, #ffce00, #fe4880);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.back p, .front h1{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    width: 300px;
+}
+
+.back p span{
+    color: green;
+}
+.backBtn{
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+#inp{
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.add, .run{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 3px rgba(0,0,0,0.1);
+}
+.add{
+    background: #000;
+    color: #fff;
+    margin-right: 20px;
+}
