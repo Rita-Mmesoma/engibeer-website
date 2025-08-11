@@ -74,7 +74,7 @@ ul li a:active{
 .menu{
     position: fixed;
     top: 0;
-    right: -450px;
+    right: 0;
     width: 250px;
     z-index: 999;
     background: #000;
@@ -87,9 +87,9 @@ ul li a:active{
     padding: 10px 20px;
     display: none;
 }
-.menu.open{
+/* .menu.open{
     right:0px
-}
+} */
 .menu-bar img, .close-menu img{
     cursor: pointer;
 }
@@ -530,9 +530,9 @@ footer .btn-container{
     .display-none{
         display: none;
     }
-    .menu-bar{
+    /* .menu-bar{
         display: block;
-    }
+    } */
     header{
         width: 90%;
     }
@@ -873,9 +873,9 @@ footer .btn-container{
     footer .div-container{
         display: none;
     }
-    .menu{
+    /* .menu{
         display: block;
-    }
+    } */
     .menu-bar{
         display: block;
     }
